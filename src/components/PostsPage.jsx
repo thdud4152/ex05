@@ -9,7 +9,7 @@ const PostPage = () => {
 
   const getPosts = () => {
     setLoading(true);
-    fetch('https://jsonplaceholder.typicode.com/todos')
+    fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(json => {
         console.log(json);
